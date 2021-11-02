@@ -3,4 +3,8 @@ for i in range(5):
     	print('*', end="")
     print('')	
 	
+<<<<<<< HEAD
 print("This is modified file")  
+=======
+  
+>>>>>>> parent of d28ce38... second commit
