@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Jua:400');
+        .nuguri{
+            font-family:'Jua';
+        }
+        body{
+            border:2px solid olivedrab;
+            background-image:url("images/jerry.png");
+            background-size:100px 100px;
+            background-repeat:no-repeat;
+            background-position:98% 2%;
+            background-attachment:fixed;
+        }
+        h1{
+            color:chartreuse;
+            font-family: 'Dongle';
+        }
+        p{
+            font-family:'Nanum Pen Script';
+            font-size:20px;
+        }
+        img{
+            border:3px solid greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>제리</h1>
+        <h2>자운의 불꽃</h2>
+    </header>
+    <nav class="navi">
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=Tl5EGdCSuUc">제리 챔피언 트레일러</a></li>
+            <li><a href="https://www.leagueoflegends.com/ko-kr/event/zeri-abilities-rundown/">제리 스킬 소개</a></li>
+            <li><a href="https://www.leagueoflegends.com/ko-kr/news/game-updates/champion-insights-zeri/">제리 챔피언 기획 해설</a></li>
+            <li><a href="https://universe.leagueoflegends.com/ko_KR/champion/zeri?_gl=1*1dqm57d*_ga*OTM5NTc4MTUuMTY0MTY0OTkxOA..*_ga_FXBJE5DEDD*MTY0MzQ0MTUyMi42LjEuMTY0MzQ0MjUzMy41Ng..">제리 배경 이야기</a></li>
+        </ul>
+    </nav>
+    <section>
+        <img src="images/Zeri_Passive.png">
+        <h2>P-살아있는 배터리</h2>
+        <article>
+            <p>제리가 보호막을 획득할 때마다 이동 속도를 얻습니다.<br>
+                적의 보호막에 피해를 입히면 에너지를 흡수하여 자신에게 보호막을 씌웁니다.<br>
+                <img src="images/ZeriP.gif">
+            </p>
+        </article>
+    </section>
+    <section>
+        <img src="images/Zeri_Q.png">
+        <h2>Q-집중 사격</h2>
+        <article>
+            <p>
+                <b>기본 지속 효과:</b> 제리의 기본 공격이 주문력에 비례하여 마법 피해를 입히며, 스킬로 간주됩니다. <br>
+                이동하며 집중 사격을 사용하면 제리의 스파크 팩에 에너지가 저장됩니다. <br>
+                완전히 충전되면 다음 기본 공격이 둔화를 적용하고 추가 피해를 입힙니다.<br>
+                <b>사용 시:</b> 처음 적중한 적에게 물리 피해를 입히는 공격 7발을 발사합니다.<br>
+                집중 사격은 공격력에 비례하며, 기본 공격으로 간주됩니다. <br>
+                첫 번째 공격은 적중 시 효과를 적용합니다. 재사용 대기시간은 제리의 기본 공격 대기시간과 동일합니다.<br>
+                <img src="images/ZeriQ.gif">
+            </p>
+        </article>
+    </section>
+    <section>
+        <img src="images/Zeri_W.png">
+        <h2>W-초강력 레이저</h2>
+        <article>
+            <p>
+                제리가 전기 펄스를 발사해 처음 적중한 적에게 피해를 입히고 둔화시킵니다.<br> 
+                펄스가 벽에 부딪히면 충돌 지점에서부터 원거리 광선을 발사합니다.<br>
+                <img src="images/ZeriW.gif">
+            </p>
+        </article>
+    </section>
+    <section>
+        <img src="images/Zeri_E.png">
+        <h2>E-스파크 돌진</h2>
+        <article>
+            <p>
+                제리가 짧은 거리를 돌진하고 다음 집중 사격 3회를 충전합니다. <br>
+                충전된 집중 사격은 적을 관통합니다. <br>
+                각도에 따라 돌진하는 모든 지형을 따라 이동하거나 뛰어넘습니다. <br>
+                기본 공격이나 스킬로 챔피언을 적중하면 스파크 돌진의 재사용 대기시간이 감소합니다.<br>
+                <img src="images/ZeriE.gif">
+            </p>
+        </article>
+    </section>
+    <section>
+        <img src="images/Zeri_R.png">
+        <h2>R-번개 방출</h2>
+        <article>
+            <p>
+                제리가 전기 폭발을 방출하여 근처 적에게 피해를 입히고 잠시 과충전 상태가 됩니다. <br>
+                과충전 상태일 때 피해량, 공격 속도, 이동 속도가 증가합니다. <br>
+                적 챔피언을 공격하면 과충전 지속시간이 초기화되며 이동 속도 증가 효과가 중첩됩니다. <br>
+                과충전 상태일 때 집중 사격이 응축되어 더 빨라지고 피해량이 3배 증가하며 적에게 연쇄 번개를 일으킵니다.<br>
+                <img src="images/ZeriR.gif">
+            </p>
+        </article>
+    </section>
+    <footer>
+        <h2 class="nuguri">"점점 더 난장판인데? 뭐 난 한결같지만!"</h2>
+        <img src="images/ZeriSkin.jpg" width=500px height=300px>
+        <p><b>매마른 장미 제리</b></p>
+    </footer>
+</body>
+</html>
