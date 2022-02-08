@@ -2,36 +2,12 @@ Text can be **bold**, _italic_, ~~strikethrough~
 
 [Link to git](http://github.com)
 
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-
-This is blockquote following a header.
-
-
-...c
-//c code with syntax highlighting.
-#include <stdio.h>
-int main(void){
-    printf("Hello World!");
-}
-...
-
-* This is an unordered list
-    * This is an unordered list
-
-
-1. This is an ordered list
-2. This is an ordered list
-
-
-|head1	|head2	     |head3  |
-|:------|------------|-------|
-|table	|'importance'|	     |
-
-
-***
-![Alt "Hello"](http://guides.github.com/activities/hello-world/branching.png)
+Gonna take you in the room suga'
+Lock you up and love for days
+We gonna be rockin' baby
+Till the cops come knockin'
+Papa gonna have to leave
+A message on the telephone baby
+There won't be no stoppin' me
+Till the cops come knockin'
 
