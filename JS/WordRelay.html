@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>끝말잇기</title>
+</head>
+<body>
+    <div><span id="order">1</span>번째 참가자</div>
+    <div>제시어:<span id="word"></span></div>
+    <input type="text">
+    <button>입력</button>
+    <script>
+        // 몇 명이 참가할지 선택한다
+        // 참가자 순서를 정한다
+        // 첫 번째 사람이 제시어를 말한다
+        // 다음 사람이 단어를 말한다
+        // 단어가 올바르면 다음 사람이 단어를 말한다
+        // 올바르지 않으면 틀렸다고 표시한다
+        const NOP=Number(prompt('몇 명이 참가하는가?'));
+        const $button=document.querySelector('button');
+        const $input=document.querySelector('input');
+        const $word=document.querySelector('#word');
+        const $order=document.querySelector('#order');
+        let word;  // 제시어
+        let newWord;    // 새로운 제시어
+        const onClickButton=()=>{
+            // 제시어가 비어있으면
+            if(!word){
+                word=newWord;
+                $word.textContent=word;
+                const order=Number($order.textContent);
+                if(order+1>NOP){
+                    $order.textContent=1;
+                }
+                else{
+                    $order.textContent=order+1;
+                }
+                $input.value='';
+                $input.focus();
+            }
+            // 비어 있지 않다
+            else{
+                if(word[word.length-1]===newWord[0]){
+                    word=newWord;
+                    $word.textContent=word;
+                    const order=Number($order.textContent);
+                    if(order+1>NOP){
+                        $order.textContent=1;
+                    }
+                    else{
+                        $order.textContent=order+1;
+                    }
+                }
+                else{
+                    alert('다시 입력하시오');
+                }
+            }
+            $input.value='';
+            $input.focus();
+        };
+        const onInput=(event)=>{
+            newWord=event.target.value;
+        };
+        $button.addEventListener('click',onClickButton);
+        $input.addEventListener('input',onInput);
+    </script>
+</body>
+</html>
