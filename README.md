@@ -1,5 +1,4 @@
-Text can be **bold**, _italic_, ~~strikethrough~
-
+https://www.twitch.tv/pikra10
 [Link to git](http://github.com)
 
 Gonna take you in the room suga'
