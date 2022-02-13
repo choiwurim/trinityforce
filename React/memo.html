@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="http://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const root=document.getElementById("root");
+        function Button(text,onClick){
+            return <button onClick={onClick}
+                style={{
+                backgroundColor:"coral",
+                color:"purple",
+                padding:"10px 10px",
+                border:0,
+                borderRadius=10,
+            }}>{text}</button>
+        }
+        const MemorizedButton=React.memo(Button);
+        function App(){
+            const[value, setValue]=React.useState("Save Change");
+            const changeValue=()=>setValue("revert change");
+            return(
+                <div>
+                    <Button text={value} onClick={changeValue}/>
+                    <Button text="continue"/>
+                </div>
+            );
+        }
+        ReactDOM.render(<App/>,root);
+    </script>
+</body>
+</html>
